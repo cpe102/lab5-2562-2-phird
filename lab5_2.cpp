@@ -1,8 +1,27 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 
+string mixText(string s1, string s2){
+ int x=s1.size(),y=s2.size(),i=0;
+ string a="";
+ if (x==y){
+	 while (i<x)
+	 {
+		a=a+s1[i]+s2[i];
+		i++;
+	 
+	 }
+	 return a;
+	 }
+	 else {
+		 return "E";
+		 }
+	 
 
+
+ }
 
 int main(){	
 	cout << mixText("AAA","BBB") << "\n";
